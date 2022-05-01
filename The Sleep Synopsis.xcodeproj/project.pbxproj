@@ -21,6 +21,10 @@
 		28DFF7E3281D45550012C12C /* TheSleepSynopsis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E1281D45550012C12C /* TheSleepSynopsis.swift */; };
 		28DFF7E5281D4F6A0012C12C /* DayProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E4281D4F6A0012C12C /* DayProgress.swift */; };
 		28DFF7E6281D4F6A0012C12C /* DayProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E4281D4F6A0012C12C /* DayProgress.swift */; };
+		28DFF7E8281D580F0012C12C /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E7281D580F0012C12C /* Welcome.swift */; };
+		28DFF7E9281D58100012C12C /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E7281D580F0012C12C /* Welcome.swift */; };
+		28DFF7EB281D581D0012C12C /* SetBedtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7EA281D581D0012C12C /* SetBedtime.swift */; };
+		28DFF7EC281D581D0012C12C /* SetBedtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7EA281D581D0012C12C /* SetBedtime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,8 @@
 		28DFF7DE281C8D4E0012C12C /* Date+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TSS.swift"; sourceTree = "<group>"; };
 		28DFF7E1281D45550012C12C /* TheSleepSynopsis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSleepSynopsis.swift; sourceTree = "<group>"; };
 		28DFF7E4281D4F6A0012C12C /* DayProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgress.swift; sourceTree = "<group>"; };
+		28DFF7E7281D580F0012C12C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		28DFF7EA281D581D0012C12C /* SetBedtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBedtime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 				28DFF7BD281C84810012C12C /* Assets.xcassets */,
 				28DFF7D9281C853C0012C12C /* TopCard.swift */,
 				28DFF7E1281D45550012C12C /* TheSleepSynopsis.swift */,
+				28DFF7E7281D580F0012C12C /* Welcome.swift */,
+				28DFF7EA281D581D0012C12C /* SetBedtime.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -201,11 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DFF7E2281D45550012C12C /* TheSleepSynopsis.swift in Sources */,
+				28DFF7EB281D581D0012C12C /* SetBedtime.swift in Sources */,
 				28DFF7E5281D4F6A0012C12C /* DayProgress.swift in Sources */,
 				28DFF7DF281C8D4E0012C12C /* Date+TSS.swift in Sources */,
 				28DFF7DA281C853C0012C12C /* TopCard.swift in Sources */,
 				28DFF7CD281C84810012C12C /* ContentView.swift in Sources */,
 				28DFF7CB281C84810012C12C /* The_Sleep_SynopsisApp.swift in Sources */,
+				28DFF7E8281D580F0012C12C /* Welcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,11 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DFF7E3281D45550012C12C /* TheSleepSynopsis.swift in Sources */,
+				28DFF7EC281D581D0012C12C /* SetBedtime.swift in Sources */,
 				28DFF7E6281D4F6A0012C12C /* DayProgress.swift in Sources */,
 				28DFF7E0281C8D4E0012C12C /* Date+TSS.swift in Sources */,
 				28DFF7DB281C853C0012C12C /* TopCard.swift in Sources */,
 				28DFF7CE281C84810012C12C /* ContentView.swift in Sources */,
 				28DFF7CC281C84810012C12C /* The_Sleep_SynopsisApp.swift in Sources */,
+				28DFF7E9281D58100012C12C /* Welcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

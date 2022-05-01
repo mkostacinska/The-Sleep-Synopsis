@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct SetBedtime: View {
+    @State var time: Date = Date()
+    var name: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Text("What's your bedtime, \(name)?")
+                    .font(.system(size: 50, weight: .bold, design: .rounded))
+                    .padding(.top, 200)
+            }
+            HStack {
+                DatePicker("", selection: $time, displayedComponents: .hourAndMinute)
+                    .datePickerStyle(WheelDatePickerStyle())
+                    .labelsHidden()
+            }
+            Spacer()
+        }
     }
 }
 
 struct SetBedtime_Previews: PreviewProvider {
     static var previews: some View {
-        SetBedtime()
+        SetBedtime(name: "Maja")
     }
 }
