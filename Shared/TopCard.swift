@@ -29,14 +29,14 @@ struct TopCard: View {
                         }
                     }
                     Text(getCountdown())
-                        .font(.subheadline)
+                        .font(.system(size: 25, design: .rounded))
                         .bold()
                         .frame(maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(10)
                 .background(Color.gray)
-                .cornerRadius(20)
+                .cornerRadius(40)
                 .padding(10)
                 Spacer()
             }

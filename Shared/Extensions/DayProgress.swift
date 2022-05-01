@@ -27,7 +27,7 @@ struct DayProgress: View {
             
             Text(current)
                 .bold()
-                .font(.system(size: 30))
+                .font(.system(size: 30, design: .rounded))
             }
     }
 }

@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct Welcome: View {
+    @State var text: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (spacing: 2) {
+            HStack {
+            Text("Welcome, ")
+                .font(.system(size: 70, weight: .bold, design: .rounded))
+                .padding(.leading, 30)
+            Spacer()
+            }
+            TextField("your name", text: $text)
+                .font(.system(size: 70, weight: .bold, design: .rounded))
+                .padding(.leading, 30)
+        }
     }
 }
 
