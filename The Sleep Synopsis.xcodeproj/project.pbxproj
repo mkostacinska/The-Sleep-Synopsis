@@ -25,6 +25,8 @@
 		28DFF7E9281D58100012C12C /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E7281D580F0012C12C /* Welcome.swift */; };
 		28DFF7EB281D581D0012C12C /* SetBedtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7EA281D581D0012C12C /* SetBedtime.swift */; };
 		28DFF7EC281D581D0012C12C /* SetBedtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7EA281D581D0012C12C /* SetBedtime.swift */; };
+		E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
+		E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,7 @@
 		28DFF7E4281D4F6A0012C12C /* DayProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgress.swift; sourceTree = "<group>"; };
 		28DFF7E7281D580F0012C12C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		28DFF7EA281D581D0012C12C /* SetBedtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBedtime.swift; sourceTree = "<group>"; };
+		E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+TSS.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,9 @@
 		28DFF7BA281C847D0012C12C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E2C3D6EB282A8A7400E0B8FE /* ViewModels */,
+				E2C3D6EA282A8A6D00E0B8FE /* Views */,
+				E2C3D6E9282A8A5500E0B8FE /* Pages */,
 				28DFF7DD281C8D210012C12C /* Extensions */,
 				28DFF7BB281C847D0012C12C /* The_Sleep_SynopsisApp.swift */,
 				28DFF7BC281C847D0012C12C /* ContentView.swift */,
@@ -105,9 +111,31 @@
 			isa = PBXGroup;
 			children = (
 				28DFF7DE281C8D4E0012C12C /* Date+TSS.swift */,
-				28DFF7E4281D4F6A0012C12C /* DayProgress.swift */,
+				E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2C3D6E9282A8A5500E0B8FE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		E2C3D6EA282A8A6D00E0B8FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28DFF7E4281D4F6A0012C12C /* DayProgress.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2C3D6EB282A8A7400E0B8FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +239,7 @@
 				28DFF7E2281D45550012C12C /* TheSleepSynopsis.swift in Sources */,
 				28DFF7EB281D581D0012C12C /* SetBedtime.swift in Sources */,
 				28DFF7E5281D4F6A0012C12C /* DayProgress.swift in Sources */,
+				E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */,
 				28DFF7DF281C8D4E0012C12C /* Date+TSS.swift in Sources */,
 				28DFF7DA281C853C0012C12C /* TopCard.swift in Sources */,
 				28DFF7CD281C84810012C12C /* ContentView.swift in Sources */,
@@ -226,6 +255,7 @@
 				28DFF7E3281D45550012C12C /* TheSleepSynopsis.swift in Sources */,
 				28DFF7EC281D581D0012C12C /* SetBedtime.swift in Sources */,
 				28DFF7E6281D4F6A0012C12C /* DayProgress.swift in Sources */,
+				E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */,
 				28DFF7E0281C8D4E0012C12C /* Date+TSS.swift in Sources */,
 				28DFF7DB281C853C0012C12C /* TopCard.swift in Sources */,
 				28DFF7CE281C84810012C12C /* ContentView.swift in Sources */,
