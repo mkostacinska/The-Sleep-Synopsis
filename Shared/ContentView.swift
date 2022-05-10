@@ -9,9 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            SetBedtime(name: "Maja")
+        if UserDefaults.standard.value(forKey: "username") == nil { // IF we havent setup yet
+            WelcomePage()
+        } else { // If we have, show main page
+            MainPage()
         }
+    }
+    
+    func endEditing() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+
     }
 }
 

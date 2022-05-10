@@ -10,6 +10,9 @@ import SwiftUI
 struct TopCard: View {
     @State var progressValue: Float = 0.0
     
+    // @AppStorage reads from UserDefaults.standard (changing self.name here will update UserDefaults too)
+    @AppStorage("username") private var name: String = ""
+    
     var body: some View {
         TimelineView(.periodic(from: Date(), by: 1.0)) { _ in
             VStack(spacing: 5) {
@@ -75,23 +78,22 @@ struct TopCard: View {
         let currentH = Calendar.current.component(.hour, from: Date())
         let currentM = Calendar.current.component(.minute, from: Date())
         let bedTime = TheSleepSynopsis.getBedtime()
-        let username = "Timmy"
         
         if (currentH > bedTime.0) || (currentH == bedTime.0 && currentM > bedTime.1) {
-            return "Trouble sleeping,\n\(username)?"
+            return "Trouble sleeping,\n\(self.name)?"
         }
         
         if currentH <= 4 {
             return ""
         }
         else if currentH <= 12 {
-            return "Good morning,\n\(username)!"
+            return "Good morning,\n\(self.name)!"
         }
         else if currentH <= 18 {
-            return "Good afternoon,\n\(username)!"
+            return "Good afternoon,\n\(self.name)!"
         }
         else {
-            return "Good evening,\n\(username)!"
+            return "Good evening,\n\(self.name)!"
         }
     }
     
