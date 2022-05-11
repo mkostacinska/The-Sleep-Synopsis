@@ -18,7 +18,7 @@ struct TopCard: View {
             VStack(spacing: 5) {
                 HStack {
                     Text(getHeader())
-                        .font(.system(size: 48, weight: .bold, design: .rounded))
+                        .font(.system(size: 40, weight: .bold, design: .rounded))
                         .padding(.leading, 10)
                         .padding(.top, 5)
                     Spacer()
@@ -27,18 +27,19 @@ struct TopCard: View {
                     ZStack {
                         VStack{
                             DayProgress(progress: getProgress(), current: currentTime())
-                                .frame(width: 100.0, height: 100.0)
+                                .frame(width: 80, height: 80)
                                 .padding(15)
                         }
                     }
                     Text(getCountdown())
-                        .font(.system(size: 25, design: .rounded))
+                        .font(.system(size: 20, design: .rounded))
                         .bold()
                         .frame(maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(10)
                 .background(Color.gray)
+                .opacity(0.8)
                 .cornerRadius(40)
                 .padding(10)
                 Spacer()
