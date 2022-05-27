@@ -10,12 +10,15 @@ import SwiftUI
 struct TopCard: View {
     @State var progressValue: Float = 0.0
     
+    // @AppStorage reads from UserDefaults.standard (changing self.name here will update UserDefaults too)
+    @AppStorage("username") private var name: String = ""
+    
     var body: some View {
         TimelineView(.periodic(from: Date(), by: 1.0)) { _ in
             VStack(spacing: 5) {
                 HStack {
                     Text(getHeader())
-                        .font(.system(size: 48, weight: .bold, design: .rounded))
+                        .font(.system(size: 40, weight: .bold, design: .rounded))
                         .padding(.leading, 10)
                         .padding(.top, 5)
                     Spacer()
@@ -24,18 +27,19 @@ struct TopCard: View {
                     ZStack {
                         VStack{
                             DayProgress(progress: getProgress(), current: currentTime())
-                                .frame(width: 100.0, height: 100.0)
+                                .frame(width: 80, height: 80)
                                 .padding(15)
                         }
                     }
                     Text(getCountdown())
-                        .font(.system(size: 25, design: .rounded))
+                        .font(.system(size: 20, design: .rounded))
                         .bold()
                         .frame(maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(10)
                 .background(Color.gray)
+                .opacity(0.8)
                 .cornerRadius(40)
                 .padding(10)
                 Spacer()
@@ -75,23 +79,22 @@ struct TopCard: View {
         let currentH = Calendar.current.component(.hour, from: Date())
         let currentM = Calendar.current.component(.minute, from: Date())
         let bedTime = TheSleepSynopsis.getBedtime()
-        let username = "Timmy"
         
         if (currentH > bedTime.0) || (currentH == bedTime.0 && currentM > bedTime.1) {
-            return "Trouble sleeping,\n\(username)?"
+            return "Trouble sleeping,\n\(self.name)?"
         }
         
         if currentH <= 4 {
             return ""
         }
         else if currentH <= 12 {
-            return "Good morning,\n\(username)!"
+            return "Good morning,\n\(self.name)!"
         }
         else if currentH <= 18 {
-            return "Good afternoon,\n\(username)!"
+            return "Good afternoon,\n\(self.name)!"
         }
         else {
-            return "Good evening,\n\(username)!"
+            return "Good evening,\n\(self.name)!"
         }
     }
     
