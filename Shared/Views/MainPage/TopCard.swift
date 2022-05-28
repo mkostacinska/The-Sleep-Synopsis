@@ -75,17 +75,33 @@ struct TopCard: View {
         return (remainingH, remainingM)
     }
     
+    func untilWake() -> (Int, Int) {
+        let w = TheSleepSynopsis.getWaketime()
+        let wakeTime = w.0*60 + w.1
+        let current = Calendar.current.component(.hour, from: Date())*60 + Calendar.current.component(.minute, from: Date())
+        
+        let remaining = wakeTime - current
+        let remainingH = Int(remaining/60)
+        let remainingM = remaining - remainingH*60
+        
+        return (remainingH, remainingM)
+    }
+    
     func getHeader() -> String {
+        // TODO:
+        // 1. what if bedtime set after midnight? time to wake will remain positive
         let currentH = Calendar.current.component(.hour, from: Date())
         let currentM = Calendar.current.component(.minute, from: Date())
         let bedTime = TheSleepSynopsis.getBedtime()
-        
-        if (currentH > bedTime.0) || (currentH == bedTime.0 && currentM > bedTime.1) {
+        let wakeTime = TheSleepSynopsis.getWaketime()
+                
+        if ((currentH < wakeTime.0 || (currentH == wakeTime.0 && currentM < wakeTime.1)) ||
+            (currentH > bedTime.0 || (currentH == bedTime.0 && currentM > bedTime.1))) {
             return "Trouble sleeping,\n\(self.name)?"
         }
         
         if currentH <= 4 {
-            return ""
+            return "Early morning,\n\(self.name)?"
         }
         else if currentH <= 12 {
             return "Good morning,\n\(self.name)!"
@@ -99,21 +115,29 @@ struct TopCard: View {
     }
     
     func getCountdown() -> String {
-        let timeUntil = untilBed()
-        if timeUntil.0<0 || timeUntil.1 < 0 {
-            if timeUntil.1 == 0 {
-                return "\(-timeUntil.0)h past bedtime."
+        //TODO:
+        // 1. what if bedtime set after midnight? timeuntilwake is going to be positive
+        // 2. calculating the time past/before
+        
+        let timeUntilBed = untilBed()
+        let timeUntilWake = untilWake()
+        
+        if (timeUntilWake.0>0 || timeUntilWake.1>0) || (timeUntilBed.0<0 || timeUntilBed.1<0){
+            if timeUntilBed.1 == 0 {
+                return "\(-timeUntilBed.0)h past bedtime."
             }
-            return "\(-timeUntil.0)h \(-timeUntil.1)min past bedtime."
+            return "\(-timeUntilBed.0)h \(-timeUntilBed.1)min past bedtime."
         }
-        else if timeUntil.0==0 && timeUntil.1<=30 {
+        
+
+        if timeUntilBed.0==0 && timeUntilBed.1<=30 {
             return "Start winding down"
         }
         else {
-            if timeUntil.1 == 0 {
-                return "\(timeUntil.0)h until bedtime."
+            if timeUntilBed.1 == 0 {
+                return "\(timeUntilBed.0)h until bedtime."
             }
-            return "\(timeUntil.0)h \(timeUntil.1)min until bedtime."
+            return "\(timeUntilBed.0)h \(timeUntilBed.1)min until bedtime."
         }
     }
 }
