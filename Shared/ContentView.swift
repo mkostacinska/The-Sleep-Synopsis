@@ -12,7 +12,14 @@ struct ContentView: View {
         if UserDefaults.standard.value(forKey: "username") == nil { // IF we havent setup yet
             WelcomePage()
         } else { // If we have, show main page
-            MainPage()
+            TabView {
+                ProfileSettings()
+                MainPage()
+                VStack{
+                    Text("I dont remember what i wanted to put here but i want three otherwise my brain will explode (threat)")
+                }
+            }.tabViewStyle(.page).edgesIgnoringSafeArea(.all)
+           
         }
     }
     
