@@ -18,7 +18,7 @@ struct TopCard: View {
             VStack(spacing: 5) {
                 HStack {
                     Text(getHeader())
-                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                        .font(.system(size: 40, weight: .bold, design: .default))
                         .padding(.leading, 10)
                         .padding(.top, 5)
                     Spacer()
@@ -31,18 +31,19 @@ struct TopCard: View {
                                 .padding(15)
                         }
                     }
-                    Text(getCountdown())
-                        .font(.system(size: 20, design: .rounded))
-                        .bold()
-                        .frame(maxWidth: .infinity)
+                    HStack{
+                        Text(getCountdown())
+                            .font(.system(size: 24, design: .default))
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                    }.padding(.leading, 50)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(10)
-                .background(Color.gray)
+                .background(Image("TopCardBackground").resizable())
                 .opacity(0.8)
                 .cornerRadius(40)
                 .padding(10)
-                Spacer()
             }
         }
         

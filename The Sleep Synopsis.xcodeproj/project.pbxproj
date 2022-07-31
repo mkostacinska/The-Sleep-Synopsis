@@ -25,6 +25,9 @@
 		E289F10C2894684B00E32148 /* SettingsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F10B2894684B00E32148 /* SettingsText.swift */; };
 		E289F10E2894700100E32148 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F10D2894700100E32148 /* SettingsModel.swift */; };
 		E289F1112894958A00E32148 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = E289F1102894958A00E32148 /* Introspect */; };
+		E289F1132895847F00E32148 /* SleepChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1122895847F00E32148 /* SleepChart.swift */; };
+		E289F11A2896B44E00E32148 /* MoodChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1192896B44E00E32148 /* MoodChart.swift */; };
+		E289F1252896E8B200E32148 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E289F1242896E8B200E32148 /* SwiftUICharts */; };
 		E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 		E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 		E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */; };
@@ -55,6 +58,8 @@
 		E289F10928945C7500E32148 /* ProfileSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettings.swift; sourceTree = "<group>"; };
 		E289F10B2894684B00E32148 /* SettingsText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsText.swift; sourceTree = "<group>"; };
 		E289F10D2894700100E32148 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		E289F1122895847F00E32148 /* SleepChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChart.swift; sourceTree = "<group>"; };
+		E289F1192896B44E00E32148 /* MoodChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChart.swift; sourceTree = "<group>"; };
 		E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+TSS.swift"; sourceTree = "<group>"; };
 		E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		E2C3D6F7282A901300E0B8FE /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E289F1112894958A00E32148 /* Introspect in Frameworks */,
+				E289F1252896E8B200E32148 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				28DFF7D9281C853C0012C12C /* TopCard.swift */,
+				E289F1122895847F00E32148 /* SleepChart.swift */,
+				E289F1192896B44E00E32148 /* MoodChart.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 			name = "The Sleep Synopsis (iOS)";
 			packageProductDependencies = (
 				E289F1102894958A00E32148 /* Introspect */,
+				E289F1242896E8B200E32148 /* SwiftUICharts */,
 			);
 			productName = "The Sleep Synopsis (iOS)";
 			productReference = 28DFF7C2281C84810012C12C /* The Sleep Synopsis.app */;
@@ -258,6 +267,7 @@
 			mainGroup = 28DFF7B5281C847D0012C12C;
 			packageReferences = (
 				E289F10F2894958A00E32148 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				E289F1232896E8B200E32148 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 28DFF7C3281C84810012C12C /* Products */;
 			projectDirPath = "";
@@ -300,6 +310,7 @@
 				E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */,
 				E2C3D707282AA1C200E0B8FE /* MainPage.swift in Sources */,
 				28DFF7DF281C8D4E0012C12C /* Date+TSS.swift in Sources */,
+				E289F1132895847F00E32148 /* SleepChart.swift in Sources */,
 				E2C3D6FB282A912300E0B8FE /* PrimaryButtonStyle.swift in Sources */,
 				28DFF7DA281C853C0012C12C /* TopCard.swift in Sources */,
 				E289F10A28945C7500E32148 /* ProfileSettings.swift in Sources */,
@@ -307,6 +318,7 @@
 				28DFF7CD281C84810012C12C /* ContentView.swift in Sources */,
 				E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */,
 				E2C3D6FE282A954A00E0B8FE /* View+TSS.swift in Sources */,
+				E289F11A2896B44E00E32148 /* MoodChart.swift in Sources */,
 				E2C3D703282AA1AA00E0B8FE /* WelcomePage.swift in Sources */,
 				28DFF7CB281C84810012C12C /* The_Sleep_SynopsisApp.swift in Sources */,
 			);
@@ -604,6 +616,14 @@
 				kind = branch;
 			};
 		};
+		E289F1232896E8B200E32148 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tom-Knighton/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -611,6 +631,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E289F10F2894958A00E32148 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
+		};
+		E289F1242896E8B200E32148 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E289F1232896E8B200E32148 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

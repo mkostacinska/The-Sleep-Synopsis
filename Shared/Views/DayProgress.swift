@@ -18,7 +18,7 @@ struct DayProgress: View {
             Circle()
                 .stroke(lineWidth: 10.0)
                 .opacity(0.3)
-                .foregroundColor(Color.purple)
+                .foregroundColor(Color.clear)
                 
             Circle()
                 .trim(from: 0.0, to: CGFloat(min(self.progress, 1.0)))
@@ -26,14 +26,15 @@ struct DayProgress: View {
                 .overlay(
                     Circle()
                         .trim(from: 0, to: CGFloat(min(self.progress, 1)))
-                        .stroke(gradient, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                        .stroke(Color(hex: "#be815e"), style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                        //.stroke(gradient, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                     
                 )
                 .rotationEffect(Angle(degrees: 270))
                 
             Text(current)
                 .bold()
-                .font(.system(size: 20, design: .rounded))
+                .font(.system(size: 23, design: .default))
             }
     }
 }

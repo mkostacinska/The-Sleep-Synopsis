@@ -6,26 +6,32 @@
 //
 
 import SwiftUI
+import Introspect
+import SwiftUICharts
 
 struct ContentView: View {
+    @State private var selection = 2
+    
     var body: some View {
         if UserDefaults.standard.value(forKey: "username") == nil { // IF we havent setup yet
             WelcomePage()
         } else { // If we have, show main page
-            TabView {
-                ProfileSettings()
-                MainPage()
+            TabView(selection: $selection) {
+                ProfileSettings().tag(1)
+                MainPage().tag(2)
                 VStack{
                     Text("I dont remember what i wanted to put here but i want three otherwise my brain will explode (threat)")
-                }
-            }.tabViewStyle(.page).edgesIgnoringSafeArea(.all)
-           
+                }.tag(3)
+            }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .edgesIgnoringSafeArea(.all)
+            .navigationBarHidden(true)
         }
     }
     
     func endEditing() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-
+        
     }
 }
 

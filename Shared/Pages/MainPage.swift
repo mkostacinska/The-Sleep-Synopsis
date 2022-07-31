@@ -10,16 +10,38 @@ import SwiftUI
 
 struct MainPage: View {
     
+    @State private var showScreen: Bool = true
+    
     var body: some View {
-        VStack {
-            TopCard()
+        ZStack{
+            Color("Layer1").edgesIgnoringSafeArea(.all)
+            VStack {
+                TopCard()
+                HStack{
+                    SleepChart()
+                    MoodChart()
+                }
+                VStack{
+                    HStack{
+                        Image(systemName: "plus")
+                        Text("Add a new sleep entry")
+                            .font(.system(size: 17, weight: .semibold, design: .default))
+                            .foregroundColor(.black)
+                    }
+                    .padding(16)
+                    .background(Color(hex: "#dd9871"))
+                    .cornerRadius(40)
+                    .padding(16)
+                    .onTapGesture {
+                        self.showScreen.toggle()
+                    }
+                }
+                Spacer()
+            }
+            .padding(.horizontal, 16)
         }
-        .background(
-            Image("tempBg")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
-        )
-       
+        .sheet(isPresented: $showScreen) {
+            NewEntry()
+        }
     }
 }
