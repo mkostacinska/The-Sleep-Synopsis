@@ -25,7 +25,7 @@ struct ProfileSettings: View {
                     Spacer().frame(width: 15)
                     VStack(alignment: .leading){
                         Text(username)
-                            .font(.system(size: 40, weight: .bold, design: .rounded)).multilineTextAlignment(.leading)
+                            .font(.system(size: 40, weight: .bold, design: .rounded)).multilineTextAlignment(.leading).scaledToFill()
                         Text("(some more information or something tom smells)").multilineTextAlignment(.leading).font(.system(size: 15, weight: .thin, design: .rounded)).foregroundColor(.init(hex: "#D4D4D4"))
                     }
                 }.frame(maxHeight: 100).padding()

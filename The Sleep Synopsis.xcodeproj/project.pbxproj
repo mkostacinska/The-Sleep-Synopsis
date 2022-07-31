@@ -27,7 +27,10 @@
 		E289F1112894958A00E32148 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = E289F1102894958A00E32148 /* Introspect */; };
 		E289F1132895847F00E32148 /* SleepChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1122895847F00E32148 /* SleepChart.swift */; };
 		E289F11A2896B44E00E32148 /* MoodChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1192896B44E00E32148 /* MoodChart.swift */; };
+		E289F11C2896D40C00E32148 /* NewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F11B2896D40C00E32148 /* NewEntry.swift */; };
 		E289F1252896E8B200E32148 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E289F1242896E8B200E32148 /* SwiftUICharts */; };
+		E289F1272896F51E00E32148 /* NewEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1262896F51E00E32148 /* NewEntryViewModel.swift */; };
+		E289F12A2896F96200E32148 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1292896F96200E32148 /* Dream.swift */; };
 		E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 		E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 		E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */; };
@@ -60,6 +63,9 @@
 		E289F10D2894700100E32148 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		E289F1122895847F00E32148 /* SleepChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChart.swift; sourceTree = "<group>"; };
 		E289F1192896B44E00E32148 /* MoodChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodChart.swift; sourceTree = "<group>"; };
+		E289F11B2896D40C00E32148 /* NewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntry.swift; sourceTree = "<group>"; };
+		E289F1262896F51E00E32148 /* NewEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewModel.swift; sourceTree = "<group>"; };
+		E289F1292896F96200E32148 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
 		E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+TSS.swift"; sourceTree = "<group>"; };
 		E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		E2C3D6F7282A901300E0B8FE /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		28DFF7BA281C847D0012C12C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E289F1282896F95100E32148 /* Models */,
 				E2C3D6EB282A8A7400E0B8FE /* ViewModels */,
 				E2C3D6EA282A8A6D00E0B8FE /* Views */,
 				E2C3D701282AA19900E0B8FE /* Pages */,
@@ -148,6 +155,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		E289F1282896F95100E32148 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E289F1292896F96200E32148 /* Dream.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E2C3D6EA282A8A6D00E0B8FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +180,7 @@
 			children = (
 				E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */,
 				E289F10D2894700100E32148 /* SettingsModel.swift */,
+				E289F1262896F51E00E32148 /* NewEntryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +191,7 @@
 				E289F10828945C5500E32148 /* Profile */,
 				E2C3D705282AA1B100E0B8FE /* Onboarding */,
 				E2C3D706282AA1C200E0B8FE /* MainPage.swift */,
+				E289F11B2896D40C00E32148 /* NewEntry.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -303,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E289F11C2896D40C00E32148 /* NewEntry.swift in Sources */,
 				E289F10E2894700100E32148 /* SettingsModel.swift in Sources */,
 				28DFF7E2281D45550012C12C /* TheSleepSynopsis.swift in Sources */,
 				E2C3D6F8282A901300E0B8FE /* BorderedTextField.swift in Sources */,
@@ -312,9 +330,11 @@
 				28DFF7DF281C8D4E0012C12C /* Date+TSS.swift in Sources */,
 				E289F1132895847F00E32148 /* SleepChart.swift in Sources */,
 				E2C3D6FB282A912300E0B8FE /* PrimaryButtonStyle.swift in Sources */,
+				E289F1272896F51E00E32148 /* NewEntryViewModel.swift in Sources */,
 				28DFF7DA281C853C0012C12C /* TopCard.swift in Sources */,
 				E289F10A28945C7500E32148 /* ProfileSettings.swift in Sources */,
 				E289F10C2894684B00E32148 /* SettingsText.swift in Sources */,
+				E289F12A2896F96200E32148 /* Dream.swift in Sources */,
 				28DFF7CD281C84810012C12C /* ContentView.swift in Sources */,
 				E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */,
 				E2C3D6FE282A954A00E0B8FE /* View+TSS.swift in Sources */,
