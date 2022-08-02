@@ -15,11 +15,11 @@ public class NewEntryViewModel : ObservableObject {
     var moods : [SleepMood]
     
     init() {
-        moods = [SleepMood(rawValue: 1, name: "Awful", defaultImage: "", selectedImage: ""),
-                 SleepMood(rawValue: 2, name: "Bad", defaultImage: "", selectedImage: ""),
-                 SleepMood(rawValue: 3, name: "Ok", defaultImage: "", selectedImage: ""),
-                 SleepMood(rawValue: 4, name: "Good", defaultImage: "", selectedImage: ""),
-                 SleepMood(rawValue: 5, name: "Awesome", defaultImage: "", selectedImage: "")]
+        moods = [SleepMood(rawValue: 1, name: "Awful", defaultImage: "AwfulUnselect", selectedImage: ""),
+                 SleepMood(rawValue: 2, name: "Bad", defaultImage: "BadUnselect", selectedImage: ""),
+                 SleepMood(rawValue: 3, name: "Ok", defaultImage: "NeutralUnselect", selectedImage: ""),
+                 SleepMood(rawValue: 4, name: "Good", defaultImage: "GoodUnselect", selectedImage: ""),
+                 SleepMood(rawValue: 5, name: "Awesome", defaultImage: "AwesomeUnselect", selectedImage: "")].reversed()
     }
     
     func selectMood(_ rawValue: Int){
