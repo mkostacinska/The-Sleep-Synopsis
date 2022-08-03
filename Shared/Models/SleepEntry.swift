@@ -19,6 +19,7 @@ public struct SleepEntry: Codable {
         self.sleepStart = sleepStart
         self.sleepEnd = sleepEnd
         self.sleepMood = sleepMood
+        self.dreams = []
     }
     
     public init(sleepStart: Date, sleepEnd: Date, sleepMood: Int, dreams: [Dream]) {
