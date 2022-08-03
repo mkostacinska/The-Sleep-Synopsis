@@ -31,7 +31,7 @@ actor AuthManager {
             throw AuthError.corruptedToken
         }
         
-        if exp >= Date().addingTimeInterval(60) {
+        if exp <= Date().addingTimeInterval(60) {
             return try await refreshToken()
         }
         
