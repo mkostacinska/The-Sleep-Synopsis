@@ -12,7 +12,6 @@ struct MainPage: View {
     
     @State private var showScreen: Bool = false
     @StateObject private var globalData: GlobalData = GlobalData.shared
-    @State private var sleepData: [SleepEntry]? = nil
     
     var body: some View {
         ZStack{
@@ -22,7 +21,7 @@ struct MainPage: View {
                 Text(self.globalData.CurrentUser?.userName ?? "No user :(") //TODO: Delete
                 HStack{
                     SleepChart()
-                    MoodChart(sleepMoods: self.$sleepData)
+                    MoodChart()
                 }
                 VStack{
                     HStack{
@@ -43,24 +42,18 @@ struct MainPage: View {
             }
             .padding(.horizontal, 16)
         }
-        .onAppear {
-            self.getSleepData()
-        }
-        .onChange(of: self.globalData.CurrentUser, perform: { newValue in
-            Task {
-                self.sleepData = await SleepService.SleepEntries(for: newValue?.userUUID ?? "")!
-            }
-        })
         .sheet(isPresented: $showScreen) {
             NewEntry()
         }
     }
     
+    
+    //Example async
     func getSleepData() {
         Task {
             if let _ = globalData.CurrentUser,
-               let sleeps = await SleepService.MySleepEntries() {
-                self.sleepData = sleeps
+               let sleeps = await SleepService.MySleepEntries() { // if let means if this object actually exists
+                //TODO: set a state variable with our data, or maybe in our global view model for nicer memory management :)
             }
         }
     }
