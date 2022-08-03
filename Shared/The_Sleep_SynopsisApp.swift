@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct The_Sleep_SynopsisApp: App {
+    
+    @StateObject private var global: GlobalData = GlobalData.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    Task {
+                        if let user = await AuthService.GetCurrentUser() {
+                            print("current user: \(user.userName)")
+                            self.global.SetCurrentUser(to: user)
+                        }
+                        
+                    }
+                }
         }
     }
 }
