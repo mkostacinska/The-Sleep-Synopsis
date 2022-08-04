@@ -33,6 +33,28 @@
 		E289F1252896E8B200E32148 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E289F1242896E8B200E32148 /* SwiftUICharts */; };
 		E289F1272896F51E00E32148 /* NewEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1262896F51E00E32148 /* NewEntryViewModel.swift */; };
 		E289F12A2896F96200E32148 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1292896F96200E32148 /* Dream.swift */; };
+		E289F12D2899A9D800E32148 /* SleepEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F12C2899A9D800E32148 /* SleepEntry.swift */; };
+		E289F12E2899A9D800E32148 /* SleepEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F12C2899A9D800E32148 /* SleepEntry.swift */; };
+		E289F1302899AA5E00E32148 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F12F2899AA5E00E32148 /* User.swift */; };
+		E289F1312899AA5E00E32148 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F12F2899AA5E00E32148 /* User.swift */; };
+		E289F1332899AA8C00E32148 /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1322899AA8C00E32148 /* UserAuth.swift */; };
+		E289F1342899AA8C00E32148 /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1322899AA8C00E32148 /* UserAuth.swift */; };
+		E289F1372899ABA500E32148 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1362899ABA500E32148 /* APIClient.swift */; };
+		E289F1382899ABA500E32148 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1362899ABA500E32148 /* APIClient.swift */; };
+		E289F13A2899B15E00E32148 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1392899B15E00E32148 /* AuthManager.swift */; };
+		E289F13B2899B15E00E32148 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1392899B15E00E32148 /* AuthManager.swift */; };
+		E289F13E2899B3B300E32148 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = E289F13D2899B3B300E32148 /* KeychainAccess */; };
+		E289F1412899B4C100E32148 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = E289F1402899B4C100E32148 /* JWTDecode */; };
+		E289F1432899B6DD00E32148 /* Data+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1422899B6DD00E32148 /* Data+Encode.swift */; };
+		E289F1442899B6DD00E32148 /* Data+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1422899B6DD00E32148 /* Data+Encode.swift */; };
+		E289F1462899D00500E32148 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1452899D00500E32148 /* AuthService.swift */; };
+		E289F1472899D00500E32148 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1452899D00500E32148 /* AuthService.swift */; };
+		E289F1492899D3FB00E32148 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1482899D3FB00E32148 /* Global.swift */; };
+		E289F14A2899D3FB00E32148 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1482899D3FB00E32148 /* Global.swift */; };
+		E2B1C6882899E4A900DC7C92 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C6872899E4A900DC7C92 /* UserService.swift */; };
+		E2B1C6892899E4A900DC7C92 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C6872899E4A900DC7C92 /* UserService.swift */; };
+		E2B1C68B2899E5BB00DC7C92 /* SleepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */; };
+		E2B1C68C2899E5BB00DC7C92 /* SleepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */; };
 		E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 		E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 		E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */; };
@@ -69,6 +91,16 @@
 		E289F11B2896D40C00E32148 /* NewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntry.swift; sourceTree = "<group>"; };
 		E289F1262896F51E00E32148 /* NewEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewModel.swift; sourceTree = "<group>"; };
 		E289F1292896F96200E32148 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
+		E289F12C2899A9D800E32148 /* SleepEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepEntry.swift; sourceTree = "<group>"; };
+		E289F12F2899AA5E00E32148 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E289F1322899AA8C00E32148 /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
+		E289F1362899ABA500E32148 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E289F1392899B15E00E32148 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		E289F1422899B6DD00E32148 /* Data+Encode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Encode.swift"; sourceTree = "<group>"; };
+		E289F1452899D00500E32148 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E289F1482899D3FB00E32148 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E2B1C6872899E4A900DC7C92 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepService.swift; sourceTree = "<group>"; };
 		E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+TSS.swift"; sourceTree = "<group>"; };
 		E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		E2C3D6F7282A901300E0B8FE /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
@@ -85,6 +117,8 @@
 			files = (
 				E289F1112894958A00E32148 /* Introspect in Frameworks */,
 				E289F1252896E8B200E32148 /* SwiftUICharts in Frameworks */,
+				E289F1412899B4C100E32148 /* JWTDecode in Frameworks */,
+				E289F13E2899B3B300E32148 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +144,7 @@
 		28DFF7BA281C847D0012C12C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E289F12B2899A7CB00E32148 /* Network */,
 				E289F1282896F95100E32148 /* Models */,
 				E2C3D6EB282A8A7400E0B8FE /* ViewModels */,
 				E2C3D6EA282A8A6D00E0B8FE /* Views */,
@@ -146,6 +181,7 @@
 				28DFF7DE281C8D4E0012C12C /* Date+TSS.swift */,
 				E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */,
 				E2C3D6FD282A954A00E0B8FE /* View+TSS.swift */,
+				E289F1422899B6DD00E32148 /* Data+Encode.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,8 +198,31 @@
 			isa = PBXGroup;
 			children = (
 				E289F1292896F96200E32148 /* Dream.swift */,
+				E289F12C2899A9D800E32148 /* SleepEntry.swift */,
+				E289F12F2899AA5E00E32148 /* User.swift */,
+				E289F1322899AA8C00E32148 /* UserAuth.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E289F12B2899A7CB00E32148 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E289F1352899AB9900E32148 /* Services */,
+				E289F1362899ABA500E32148 /* APIClient.swift */,
+				E289F1392899B15E00E32148 /* AuthManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E289F1352899AB9900E32148 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E289F1452899D00500E32148 /* AuthService.swift */,
+				E2B1C6872899E4A900DC7C92 /* UserService.swift */,
+				E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E2C3D6EA282A8A6D00E0B8FE /* Views */ = {
@@ -184,6 +243,7 @@
 				E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */,
 				E289F10D2894700100E32148 /* SettingsModel.swift */,
 				E289F1262896F51E00E32148 /* NewEntryViewModel.swift */,
+				E289F1482899D3FB00E32148 /* Global.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -237,6 +297,8 @@
 			packageProductDependencies = (
 				E289F1102894958A00E32148 /* Introspect */,
 				E289F1242896E8B200E32148 /* SwiftUICharts */,
+				E289F13D2899B3B300E32148 /* KeychainAccess */,
+				E289F1402899B4C100E32148 /* JWTDecode */,
 			);
 			productName = "The Sleep Synopsis (iOS)";
 			productReference = 28DFF7C2281C84810012C12C /* The Sleep Synopsis.app */;
@@ -289,6 +351,8 @@
 			packageReferences = (
 				E289F10F2894958A00E32148 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				E289F1232896E8B200E32148 /* XCRemoteSwiftPackageReference "ChartView" */,
+				E289F13C2899B3B300E32148 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				E289F13F2899B4C100E32148 /* XCRemoteSwiftPackageReference "JWTDecode" */,
 			);
 			productRefGroup = 28DFF7C3281C84810012C12C /* Products */;
 			projectDirPath = "";
@@ -327,25 +391,35 @@
 				E289F11C2896D40C00E32148 /* NewEntry.swift in Sources */,
 				E289F10E2894700100E32148 /* SettingsModel.swift in Sources */,
 				28DFF7E2281D45550012C12C /* TheSleepSynopsis.swift in Sources */,
+				E289F13A2899B15E00E32148 /* AuthManager.swift in Sources */,
+				E289F1372899ABA500E32148 /* APIClient.swift in Sources */,
 				E2C3D6F8282A901300E0B8FE /* BorderedTextField.swift in Sources */,
+				E289F12D2899A9D800E32148 /* SleepEntry.swift in Sources */,
 				28DFF7E5281D4F6A0012C12C /* DayProgress.swift in Sources */,
 				E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */,
 				E2C3D707282AA1C200E0B8FE /* MainPage.swift in Sources */,
+				E2B1C68B2899E5BB00DC7C92 /* SleepService.swift in Sources */,
 				28DFF7DF281C8D4E0012C12C /* Date+TSS.swift in Sources */,
 				E289F1132895847F00E32148 /* SleepChart.swift in Sources */,
 				E2C3D6FB282A912300E0B8FE /* PrimaryButtonStyle.swift in Sources */,
 				E289F1272896F51E00E32148 /* NewEntryViewModel.swift in Sources */,
 				28DFF7DA281C853C0012C12C /* TopCard.swift in Sources */,
+				E289F1492899D3FB00E32148 /* Global.swift in Sources */,
 				E289F10A28945C7500E32148 /* ProfileSettings.swift in Sources */,
 				E289F10C2894684B00E32148 /* SettingsText.swift in Sources */,
 				E289F12A2896F96200E32148 /* Dream.swift in Sources */,
 				28DFF7CD281C84810012C12C /* ContentView.swift in Sources */,
 				284408EA28988BB900207B5C /* NewDream.swift in Sources */,
 				E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */,
+				E289F1332899AA8C00E32148 /* UserAuth.swift in Sources */,
 				E2C3D6FE282A954A00E0B8FE /* View+TSS.swift in Sources */,
 				E289F11A2896B44E00E32148 /* MoodChart.swift in Sources */,
+				E289F1432899B6DD00E32148 /* Data+Encode.swift in Sources */,
 				E2C3D703282AA1AA00E0B8FE /* WelcomePage.swift in Sources */,
+				E2B1C6882899E4A900DC7C92 /* UserService.swift in Sources */,
 				28DFF7CB281C84810012C12C /* The_Sleep_SynopsisApp.swift in Sources */,
+				E289F1302899AA5E00E32148 /* User.swift in Sources */,
+				E289F1462899D00500E32148 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,19 +428,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DFF7E3281D45550012C12C /* TheSleepSynopsis.swift in Sources */,
+				E289F13B2899B15E00E32148 /* AuthManager.swift in Sources */,
+				E289F1382899ABA500E32148 /* APIClient.swift in Sources */,
+				E289F1442899B6DD00E32148 /* Data+Encode.swift in Sources */,
 				E2C3D6F9282A901300E0B8FE /* BorderedTextField.swift in Sources */,
 				28DFF7E6281D4F6A0012C12C /* DayProgress.swift in Sources */,
+				E2B1C6892899E4A900DC7C92 /* UserService.swift in Sources */,
 				E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */,
+				E289F1472899D00500E32148 /* AuthService.swift in Sources */,
 				E2C3D708282AA1C200E0B8FE /* MainPage.swift in Sources */,
+				E2B1C68C2899E5BB00DC7C92 /* SleepService.swift in Sources */,
 				28DFF7E0281C8D4E0012C12C /* Date+TSS.swift in Sources */,
+				E289F12E2899A9D800E32148 /* SleepEntry.swift in Sources */,
 				E2C3D6FC282A912300E0B8FE /* PrimaryButtonStyle.swift in Sources */,
+				E289F1312899AA5E00E32148 /* User.swift in Sources */,
 				28DFF7DB281C853C0012C12C /* TopCard.swift in Sources */,
+				E289F1342899AA8C00E32148 /* UserAuth.swift in Sources */,
 				28DFF7CE281C84810012C12C /* ContentView.swift in Sources */,
 				E2C3D6F6282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */,
 				E2C3D6FF282A954A00E0B8FE /* View+TSS.swift in Sources */,
 				E2C3D704282AA1AA00E0B8FE /* WelcomePage.swift in Sources */,
 				284408EB28988BB900207B5C /* NewDream.swift in Sources */,
 				28DFF7CC281C84810012C12C /* The_Sleep_SynopsisApp.swift in Sources */,
+				E289F14A2899D3FB00E32148 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +734,22 @@
 				minimumVersion = 1.5.0;
 			};
 		};
+		E289F13C2899B3B300E32148 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E289F13F2899B4C100E32148 /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -662,6 +762,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E289F1232896E8B200E32148 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
+		};
+		E289F13D2899B3B300E32148 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E289F13C2899B3B300E32148 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		E289F1402899B4C100E32148 /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E289F13F2899B4C100E32148 /* XCRemoteSwiftPackageReference "JWTDecode" */;
+			productName = JWTDecode;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

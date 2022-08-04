@@ -10,13 +10,15 @@ import SwiftUI
 
 struct MainPage: View {
     
-    @State private var showScreen: Bool = true
+    @State private var showScreen: Bool = false
+    @StateObject private var globalData: GlobalData = GlobalData.shared
     
     var body: some View {
         ZStack{
             Color("Layer1").edgesIgnoringSafeArea(.all)
             VStack {
                 TopCard()
+                Text(self.globalData.CurrentUser?.userName ?? "No user :(") //TODO: Delete
                 HStack{
                     SleepChart()
                     MoodChart()
@@ -42,6 +44,17 @@ struct MainPage: View {
         }
         .sheet(isPresented: $showScreen) {
             NewEntry()
+        }
+    }
+    
+    
+    //Example async
+    func getSleepData() {
+        Task {
+            if let _ = globalData.CurrentUser,
+               let sleeps = await SleepService.MySleepEntries() { // if let means if this object actually exists
+                //TODO: set a state variable with our data, or maybe in our global view model for nicer memory management :)
+            }
         }
     }
 }
