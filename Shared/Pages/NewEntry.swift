@@ -16,10 +16,6 @@ struct NewEntry: View {
                 Color("Layer1").edgesIgnoringSafeArea(.all)
                 ScrollView{
                     VStack(alignment: .leading){
-                        //                    Text("Add a new entry:")
-                        //                        .frame(maxWidth: .infinity, alignment: .leading)
-                        //                        .font(.system(size: 40, weight: .bold, design: .default))
-                        //                        .multilineTextAlignment(.leading)
                         Text("When did you go to bed?")
                             .font(.system(size: 25, weight: .regular, design: .default))
                         DatePicker("", selection: $viewModel.bedtime).datePickerStyle(.automatic)

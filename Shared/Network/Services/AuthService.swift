@@ -67,7 +67,8 @@ public struct AuthService {
     /// - Parameter dto: The details of the new user
     public static func RegisterUser(_ dto: NewUserDTO) async -> User? {
         do {
-            let request = APIRequest(method: .post, path: "auth/register")
+            var request = APIRequest(method: .post, path: "auth/register")
+            request.body = dto.jsonEncode()
             return try await APIClient.shared.perform(request, to: User.self)
         } catch {
             return nil

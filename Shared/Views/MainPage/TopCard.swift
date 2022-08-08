@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TopCard: View {
     @State var progressValue: Float = 0.0
+    @StateObject private var globalData: GlobalData = GlobalData.shared
     
     // @AppStorage reads from UserDefaults.standard (changing self.name here will update UserDefaults too)
     @AppStorage("username") private var name: String = ""
@@ -82,20 +83,20 @@ struct TopCard: View {
         let bedTime = TheSleepSynopsis.getBedtime()
         
         if (currentH > bedTime.0) || (currentH == bedTime.0 && currentM > bedTime.1) {
-            return "Trouble sleeping,\n\(self.name)?"
+            return "Trouble sleeping,\n\(globalData.CurrentUser?.userName ?? "")?"
         }
         
         if currentH <= 4 {
             return ""
         }
         else if currentH <= 12 {
-            return "Good morning,\n\(self.name)!"
+            return "Good morning,\n\(globalData.CurrentUser?.userName ?? "")!"
         }
         else if currentH <= 18 {
-            return "Good afternoon,\n\(self.name)!"
+            return "Good afternoon,\n\(globalData.CurrentUser?.userName ?? "")!"
         }
         else {
-            return "Good evening,\n\(self.name)!"
+            return "Good evening,\n\(globalData.CurrentUser?.userName ?? "")!"
         }
     }
     

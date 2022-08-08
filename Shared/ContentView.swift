@@ -8,6 +8,7 @@
 import SwiftUI
 import Introspect
 import SwiftUICharts
+import KeychainAccess
 
 struct ContentView: View {
     @State private var selection = 2
@@ -16,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            if UserDefaults.standard.value(forKey: "username") == nil { // IF we havent setup yet
+            if UserDefaults.standard.value(forKey: "bedtime") == nil { // IF we havent setup yet
                 WelcomePage()
             } else { // If we have, show main page
                 TabView(selection: $selection) {

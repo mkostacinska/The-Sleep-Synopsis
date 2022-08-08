@@ -18,7 +18,7 @@ struct MainPage: View {
             Color("Layer1").edgesIgnoringSafeArea(.all)
             VStack {
                 TopCard()
-                Text(self.globalData.CurrentUser?.userName ?? "No user :(") //TODO: Delete
+                //Text(self.globalData.CurrentUser?.userName ?? "No user :(") //TODO: Delete
                 HStack{
                     SleepChart()
                     MoodChart()
