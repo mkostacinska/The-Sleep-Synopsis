@@ -15,21 +15,26 @@ struct ContentView: View {
     
     @State private var hasInit: Bool = false
     
+    @State private var shouldShowSetBedTime = false
+    
     var body: some View {
         ZStack {
-            if UserDefaults.standard.value(forKey: "bedtime") == nil { // IF we havent setup yet
-                WelcomePage()
-            } else { // If we have, show main page
-                TabView(selection: $selection) {
-                    ProfileSettings().tag(1)
-                    MainPage().tag(2)
-                    VStack{
-                        Text("I dont remember what i wanted to put here but i want three otherwise my brain will explode (threat)")
-                    }.tag(3)
-                }
-                .tabViewStyle(.page(indexDisplayMode: .always))
-                .edgesIgnoringSafeArea(.all)
-                .navigationBarHidden(true)
+            TabView(selection: $selection) {
+                ProfileSettings().tag(1)
+                MainPage().tag(2)
+                VStack{
+                    Text("I dont remember what i wanted to put here but i want three otherwise my brain will explode (threat)")
+                }.tag(3)
+            }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .edgesIgnoringSafeArea(.all)
+            .navigationBarHidden(true)
+            .onAppear {
+                self.shouldShowSetBedTime = UserDefaults.standard.value(forKey: "bedtime") == nil
+            }
+            .sheet(isPresented: $shouldShowSetBedTime) {
+                BedTimePage()
+                    .interactiveDismissDisabled()
             }
         }
     }

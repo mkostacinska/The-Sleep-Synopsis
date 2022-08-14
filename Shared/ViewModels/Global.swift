@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 public class GlobalData: ObservableObject {
     
     public static let shared: GlobalData = GlobalData()

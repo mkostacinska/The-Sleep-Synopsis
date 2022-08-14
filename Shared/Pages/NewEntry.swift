@@ -15,7 +15,7 @@ struct NewEntry: View {
             ZStack{
                 Color("Layer1").edgesIgnoringSafeArea(.all)
                 ScrollView{
-                    VStack(alignment: .leading){
+                    VStack(alignment: .leading) {
                         Text("When did you go to bed?")
                             .font(.system(size: 25, weight: .regular, design: .default))
                         DatePicker("", selection: $viewModel.bedtime).datePickerStyle(.automatic)

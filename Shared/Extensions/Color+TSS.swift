@@ -41,6 +41,10 @@ extension Color {
         return self.adjust(by: -1 * abs(percentage))
     }
     
+    func lighter(by percentage: CGFloat = 30) -> Color {
+        return self.adjust(by: abs(percentage))
+    }
+    
     func adjust(by percentage: CGFloat = 30.0) -> Color {
         var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
         let uiC = UIColor(self)

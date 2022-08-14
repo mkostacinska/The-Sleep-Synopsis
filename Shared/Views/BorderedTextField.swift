@@ -12,14 +12,24 @@ struct BorderedTextField: View {
     
     var placeHolder: String
     @Binding var text: String
-    
+    var isSecure: Bool = false
+
     var body: some View {
-        TextField(placeHolder, text: $text)
+        textView
             .padding()
             .overlay(
-                RoundedRectangle(cornerRadius: 15)
+                RoundedRectangle(cornerRadius: 10)
                     .stroke(lineWidth: 1)
             )
+    }
+    
+    @ViewBuilder
+    var textView: some View {
+        if isSecure {
+            SecureField(placeHolder, text: $text)
+        } else {
+            TextField(placeHolder, text: $text)
+        }
     }
 }
 

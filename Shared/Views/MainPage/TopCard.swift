@@ -13,6 +13,8 @@ struct TopCard: View {
     
     // @AppStorage reads from UserDefaults.standard (changing self.name here will update UserDefaults too)
     @AppStorage("username") private var name: String = ""
+    @AppStorage("bedtime") var bedTime: Date?
+    @AppStorage("waketime") var wakeTime: Date?
     
     var body: some View {
         TimelineView(.periodic(from: Date(), by: 1.0)) { _ in
@@ -51,7 +53,10 @@ struct TopCard: View {
     }
     
     func getProgress() -> Float {
-        let b = TheSleepSynopsis.getBedtime()
+        guard let bedTime = bedTime else {
+            return 0
+        }
+        let b = (Calendar.current.component(.hour, from: bedTime), Calendar.current.component(.minute, from: bedTime))
         let total = Float(b.0*60 + b.1)
         let current = Float(Calendar.current.component(.hour, from: Date())*60 + Calendar.current.component(.minute, from: Date()))
         
@@ -66,7 +71,10 @@ struct TopCard: View {
     
     // This will need to be modified when we add manual bedtime setting
     func untilBed() -> (Int, Int) {
-        let b = TheSleepSynopsis.getBedtime()
+        guard let savedBedTime = bedTime else {
+            return (0, 0)
+        }
+        let b = (Calendar.current.component(.hour, from: savedBedTime), Calendar.current.component(.minute, from: savedBedTime))
         let bedTime = b.0*60 + b.1
         let current = Calendar.current.component(.hour, from: Date())*60 + Calendar.current.component(.minute, from: Date())
         
@@ -80,7 +88,10 @@ struct TopCard: View {
     func getHeader() -> String {
         let currentH = Calendar.current.component(.hour, from: Date())
         let currentM = Calendar.current.component(.minute, from: Date())
-        let bedTime = TheSleepSynopsis.getBedtime()
+        guard let savedBedTime = bedTime else {
+            return ""
+        }
+        let bedTime = (Calendar.current.component(.hour, from: savedBedTime), Calendar.current.component(.minute, from: savedBedTime))
         
         if (currentH > bedTime.0) || (currentH == bedTime.0 && currentM > bedTime.1) {
             return "Trouble sleeping,\n\(globalData.CurrentUser?.userName ?? "")?"

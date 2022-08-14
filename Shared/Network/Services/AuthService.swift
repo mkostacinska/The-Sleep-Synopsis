@@ -29,7 +29,8 @@ public struct AuthService {
                 try? keychain.set(user.userUUID ?? "", key: "uuid")
                 try? keychain.set(user.authTokens?.refreshToken ?? "", key: "refresh")
                 try? keychain.set(user.authTokens?.authenticationToken ?? "", key: "jwt")
-                GlobalData.shared.SetCurrentUser(to: user)
+                UserDefaults.standard.set(false, forKey: "isFirstInstall")
+                await GlobalData.shared.SetCurrentUser(to: user)
             }
             
             return user
@@ -40,7 +41,7 @@ public struct AuthService {
     }
     
     /// Removes user information from Keychain
-    public static func Logout() {
+    @MainActor public static func Logout() {
         let keychain = Keychain(service: "online.tomk.The-Sleep-Synopsis")
         try? keychain.remove("uuid")
         try? keychain.remove("refresh")
@@ -73,5 +74,27 @@ public struct AuthService {
         } catch {
             return nil
         }
-    }    
+    }
+    
+    /// Returns whether or not the specified username is available (i.e. not in use)
+    /// - Parameter username: The username to check
+    public static func IsUsernameFree(_ username: String) async -> Bool? {
+        do {
+            let request = APIRequest(method: .get, path: "auth/isusernamefree/\(username)")
+            return try await APIClient.shared.perform(request, to: Bool.self)
+        } catch {
+            return nil
+        }
+    }
+    
+    /// Returns whether or not the specifed email address is available (i.e. not in use)
+    /// - Parameter email: The email address to check
+    public static func IsEmailFree(_ email: String) async -> Bool? {
+        do {
+            let request = APIRequest(method: .get, path: "auth/isemailfree/\(email)")
+            return try await APIClient.shared.perform(request, to: Bool.self)
+        } catch {
+            return nil
+        }
+    }
 }

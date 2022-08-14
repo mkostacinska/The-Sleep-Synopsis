@@ -23,6 +23,12 @@
 		28DFF7E3281D45550012C12C /* TheSleepSynopsis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E1281D45550012C12C /* TheSleepSynopsis.swift */; };
 		28DFF7E5281D4F6A0012C12C /* DayProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E4281D4F6A0012C12C /* DayProgress.swift */; };
 		28DFF7E6281D4F6A0012C12C /* DayProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFF7E4281D4F6A0012C12C /* DayProgress.swift */; };
+		E20257A028A31C420090A690 /* BedTimePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202579F28A31C420090A690 /* BedTimePage.swift */; };
+		E20257A128A31C420090A690 /* BedTimePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202579F28A31C420090A690 /* BedTimePage.swift */; };
+		E228427628A1AC4400B4809A /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228427528A1AC4400B4809A /* LoginPage.swift */; };
+		E228427728A1AC4400B4809A /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228427528A1AC4400B4809A /* LoginPage.swift */; };
+		E228427928A1AC4E00B4809A /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228427828A1AC4E00B4809A /* SignupPage.swift */; };
+		E228427A28A1AC4E00B4809A /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228427828A1AC4E00B4809A /* SignupPage.swift */; };
 		E289F10A28945C7500E32148 /* ProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F10928945C7500E32148 /* ProfileSettings.swift */; };
 		E289F10C2894684B00E32148 /* SettingsText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F10B2894684B00E32148 /* SettingsText.swift */; };
 		E289F10E2894700100E32148 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F10D2894700100E32148 /* SettingsModel.swift */; };
@@ -51,6 +57,12 @@
 		E289F1472899D00500E32148 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1452899D00500E32148 /* AuthService.swift */; };
 		E289F1492899D3FB00E32148 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1482899D3FB00E32148 /* Global.swift */; };
 		E289F14A2899D3FB00E32148 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289F1482899D3FB00E32148 /* Global.swift */; };
+		E2A0B9E828A1B29100133AD5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E2A0B9E728A1B29100133AD5 /* Lottie */; };
+		E2A0B9EA28A1B29C00133AD5 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0B9E928A1B29C00133AD5 /* LottieView.swift */; };
+		E2A0B9F628A1B72500133AD5 /* lottie_sleep.json in Resources */ = {isa = PBXBuildFile; fileRef = E2A0B9F528A1B72500133AD5 /* lottie_sleep.json */; };
+		E2A0B9F728A1B72500133AD5 /* lottie_sleep.json in Resources */ = {isa = PBXBuildFile; fileRef = E2A0B9F528A1B72500133AD5 /* lottie_sleep.json */; };
+		E2A0B9F928A1BC1700133AD5 /* AuthViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0B9F828A1BC1700133AD5 /* AuthViewModels.swift */; };
+		E2A0B9FA28A1BC1700133AD5 /* AuthViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0B9F828A1BC1700133AD5 /* AuthViewModels.swift */; };
 		E2B1C6882899E4A900DC7C92 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C6872899E4A900DC7C92 /* UserService.swift */; };
 		E2B1C6892899E4A900DC7C92 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C6872899E4A900DC7C92 /* UserService.swift */; };
 		E2B1C68B2899E5BB00DC7C92 /* SleepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */; };
@@ -83,6 +95,9 @@
 		28DFF7DE281C8D4E0012C12C /* Date+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TSS.swift"; sourceTree = "<group>"; };
 		28DFF7E1281D45550012C12C /* TheSleepSynopsis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSleepSynopsis.swift; sourceTree = "<group>"; };
 		28DFF7E4281D4F6A0012C12C /* DayProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgress.swift; sourceTree = "<group>"; };
+		E202579F28A31C420090A690 /* BedTimePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedTimePage.swift; sourceTree = "<group>"; };
+		E228427528A1AC4400B4809A /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		E228427828A1AC4E00B4809A /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		E289F10928945C7500E32148 /* ProfileSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettings.swift; sourceTree = "<group>"; };
 		E289F10B2894684B00E32148 /* SettingsText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsText.swift; sourceTree = "<group>"; };
 		E289F10D2894700100E32148 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
@@ -99,6 +114,9 @@
 		E289F1422899B6DD00E32148 /* Data+Encode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Encode.swift"; sourceTree = "<group>"; };
 		E289F1452899D00500E32148 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E289F1482899D3FB00E32148 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E2A0B9E928A1B29C00133AD5 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E2A0B9F528A1B72500133AD5 /* lottie_sleep.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_sleep.json; sourceTree = "<group>"; };
+		E2A0B9F828A1BC1700133AD5 /* AuthViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModels.swift; sourceTree = "<group>"; };
 		E2B1C6872899E4A900DC7C92 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepService.swift; sourceTree = "<group>"; };
 		E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+TSS.swift"; sourceTree = "<group>"; };
@@ -115,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A0B9E828A1B29100133AD5 /* Lottie in Frameworks */,
 				E289F1112894958A00E32148 /* Introspect in Frameworks */,
 				E289F1252896E8B200E32148 /* SwiftUICharts in Frameworks */,
 				E289F1412899B4C100E32148 /* JWTDecode in Frameworks */,
@@ -144,6 +163,7 @@
 		28DFF7BA281C847D0012C12C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E2A0B9EB28A1B2CF00133AD5 /* Assets */,
 				E289F12B2899A7CB00E32148 /* Network */,
 				E289F1282896F95100E32148 /* Models */,
 				E2C3D6EB282A8A7400E0B8FE /* ViewModels */,
@@ -225,6 +245,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		E2A0B9EB28A1B2CF00133AD5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E2A0B9F528A1B72500133AD5 /* lottie_sleep.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		E2C3D6EA282A8A6D00E0B8FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +261,7 @@
 				E2C3D6F7282A901300E0B8FE /* BorderedTextField.swift */,
 				E2C3D6FA282A912300E0B8FE /* PrimaryButtonStyle.swift */,
 				E289F10B2894684B00E32148 /* SettingsText.swift */,
+				E2A0B9E928A1B29C00133AD5 /* LottieView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +273,7 @@
 				E289F10D2894700100E32148 /* SettingsModel.swift */,
 				E289F1262896F51E00E32148 /* NewEntryViewModel.swift */,
 				E289F1482899D3FB00E32148 /* Global.swift */,
+				E2A0B9F828A1BC1700133AD5 /* AuthViewModels.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -264,6 +294,9 @@
 			children = (
 				E2C3D702282AA1AA00E0B8FE /* WelcomePage.swift */,
 				284408E928988BB900207B5C /* NewDream.swift */,
+				E228427528A1AC4400B4809A /* LoginPage.swift */,
+				E228427828A1AC4E00B4809A /* SignupPage.swift */,
+				E202579F28A31C420090A690 /* BedTimePage.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -299,6 +332,7 @@
 				E289F1242896E8B200E32148 /* SwiftUICharts */,
 				E289F13D2899B3B300E32148 /* KeychainAccess */,
 				E289F1402899B4C100E32148 /* JWTDecode */,
+				E2A0B9E728A1B29100133AD5 /* Lottie */,
 			);
 			productName = "The Sleep Synopsis (iOS)";
 			productReference = 28DFF7C2281C84810012C12C /* The Sleep Synopsis.app */;
@@ -353,6 +387,7 @@
 				E289F1232896E8B200E32148 /* XCRemoteSwiftPackageReference "ChartView" */,
 				E289F13C2899B3B300E32148 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				E289F13F2899B4C100E32148 /* XCRemoteSwiftPackageReference "JWTDecode" */,
+				E2A0B9E628A1B29100133AD5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 28DFF7C3281C84810012C12C /* Products */;
 			projectDirPath = "";
@@ -370,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DFF7CF281C84810012C12C /* Assets.xcassets in Resources */,
+				E2A0B9F628A1B72500133AD5 /* lottie_sleep.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DFF7D0281C84810012C12C /* Assets.xcassets in Resources */,
+				E2A0B9F728A1B72500133AD5 /* lottie_sleep.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +434,7 @@
 				E289F12D2899A9D800E32148 /* SleepEntry.swift in Sources */,
 				28DFF7E5281D4F6A0012C12C /* DayProgress.swift in Sources */,
 				E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */,
+				E228427628A1AC4400B4809A /* LoginPage.swift in Sources */,
 				E2C3D707282AA1C200E0B8FE /* MainPage.swift in Sources */,
 				E2B1C68B2899E5BB00DC7C92 /* SleepService.swift in Sources */,
 				28DFF7DF281C8D4E0012C12C /* Date+TSS.swift in Sources */,
@@ -415,11 +453,15 @@
 				E2C3D6FE282A954A00E0B8FE /* View+TSS.swift in Sources */,
 				E289F11A2896B44E00E32148 /* MoodChart.swift in Sources */,
 				E289F1432899B6DD00E32148 /* Data+Encode.swift in Sources */,
+				E2A0B9F928A1BC1700133AD5 /* AuthViewModels.swift in Sources */,
+				E228427928A1AC4E00B4809A /* SignupPage.swift in Sources */,
 				E2C3D703282AA1AA00E0B8FE /* WelcomePage.swift in Sources */,
 				E2B1C6882899E4A900DC7C92 /* UserService.swift in Sources */,
 				28DFF7CB281C84810012C12C /* The_Sleep_SynopsisApp.swift in Sources */,
+				E2A0B9EA28A1B29C00133AD5 /* LottieView.swift in Sources */,
 				E289F1302899AA5E00E32148 /* User.swift in Sources */,
 				E289F1462899D00500E32148 /* AuthService.swift in Sources */,
+				E20257A028A31C420090A690 /* BedTimePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,17 +479,21 @@
 				E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */,
 				E289F1472899D00500E32148 /* AuthService.swift in Sources */,
 				E2C3D708282AA1C200E0B8FE /* MainPage.swift in Sources */,
+				E2A0B9FA28A1BC1700133AD5 /* AuthViewModels.swift in Sources */,
+				E20257A128A31C420090A690 /* BedTimePage.swift in Sources */,
 				E2B1C68C2899E5BB00DC7C92 /* SleepService.swift in Sources */,
 				28DFF7E0281C8D4E0012C12C /* Date+TSS.swift in Sources */,
 				E289F12E2899A9D800E32148 /* SleepEntry.swift in Sources */,
 				E2C3D6FC282A912300E0B8FE /* PrimaryButtonStyle.swift in Sources */,
 				E289F1312899AA5E00E32148 /* User.swift in Sources */,
 				28DFF7DB281C853C0012C12C /* TopCard.swift in Sources */,
+				E228427A28A1AC4E00B4809A /* SignupPage.swift in Sources */,
 				E289F1342899AA8C00E32148 /* UserAuth.swift in Sources */,
 				28DFF7CE281C84810012C12C /* ContentView.swift in Sources */,
 				E2C3D6F6282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */,
 				E2C3D6FF282A954A00E0B8FE /* View+TSS.swift in Sources */,
 				E2C3D704282AA1AA00E0B8FE /* WelcomePage.swift in Sources */,
+				E228427728A1AC4400B4809A /* LoginPage.swift in Sources */,
 				284408EB28988BB900207B5C /* NewDream.swift in Sources */,
 				28DFF7CC281C84810012C12C /* The_Sleep_SynopsisApp.swift in Sources */,
 				E289F14A2899D3FB00E32148 /* Global.swift in Sources */,
@@ -575,7 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KR47D64SN;
+				DEVELOPMENT_TEAM = 8H3J46CN24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -605,7 +651,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KR47D64SN;
+				DEVELOPMENT_TEAM = 8H3J46CN24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -638,7 +684,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KR47D64SN;
+				DEVELOPMENT_TEAM = 8H3J46CN24;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -666,7 +712,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3KR47D64SN;
+				DEVELOPMENT_TEAM = 8H3J46CN24;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -750,6 +796,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		E2A0B9E628A1B29100133AD5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -772,6 +826,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E289F13F2899B4C100E32148 /* XCRemoteSwiftPackageReference "JWTDecode" */;
 			productName = JWTDecode;
+		};
+		E2A0B9E728A1B29100133AD5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2A0B9E628A1B29100133AD5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

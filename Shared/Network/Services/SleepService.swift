@@ -11,7 +11,7 @@ public struct SleepService {
     
     /// Returns sleep entries for the current logged in user
     public static func MySleepEntries() async -> [SleepEntry]? {
-        guard let _ = GlobalData.shared.CurrentUser?.userUUID else {
+        guard let _ = await GlobalData.shared.CurrentUser?.userUUID else {
             return nil
         }
         
@@ -26,7 +26,7 @@ public struct SleepService {
     /// Returns sleep entries for a specified user
     /// - Parameter userUUID: The UUID of the user
     public static func SleepEntries(for userUUID: String) async -> [SleepEntry]? {
-        guard let _ = GlobalData.shared.CurrentUser?.userUUID else {
+        guard let _ = await GlobalData.shared.CurrentUser?.userUUID else {
             return nil
         }
         
