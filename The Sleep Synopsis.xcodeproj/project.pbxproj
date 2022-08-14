@@ -69,8 +69,8 @@
 		E2B1C68C2899E5BB00DC7C92 /* SleepService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */; };
 		E2C3D6ED282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
 		E2C3D6EE282A8A9E00E0B8FE /* Color+TSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */; };
-		E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */; };
-		E2C3D6F6282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */; };
+		E2C3D6F5282A8D5D00E0B8FE /* SetBedTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F4282A8D5D00E0B8FE /* SetBedTimeViewModel.swift */; };
+		E2C3D6F6282A8D5D00E0B8FE /* SetBedTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F4282A8D5D00E0B8FE /* SetBedTimeViewModel.swift */; };
 		E2C3D6F8282A901300E0B8FE /* BorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F7282A901300E0B8FE /* BorderedTextField.swift */; };
 		E2C3D6F9282A901300E0B8FE /* BorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6F7282A901300E0B8FE /* BorderedTextField.swift */; };
 		E2C3D6FB282A912300E0B8FE /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3D6FA282A912300E0B8FE /* PrimaryButtonStyle.swift */; };
@@ -120,7 +120,7 @@
 		E2B1C6872899E4A900DC7C92 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E2B1C68A2899E5BB00DC7C92 /* SleepService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepService.swift; sourceTree = "<group>"; };
 		E2C3D6EC282A8A9E00E0B8FE /* Color+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+TSS.swift"; sourceTree = "<group>"; };
-		E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		E2C3D6F4282A8D5D00E0B8FE /* SetBedTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBedTimeViewModel.swift; sourceTree = "<group>"; };
 		E2C3D6F7282A901300E0B8FE /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
 		E2C3D6FA282A912300E0B8FE /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		E2C3D6FD282A954A00E0B8FE /* View+TSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TSS.swift"; sourceTree = "<group>"; };
@@ -269,7 +269,7 @@
 		E2C3D6EB282A8A7400E0B8FE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E2C3D6F4282A8D5D00E0B8FE /* OnboardingViewModel.swift */,
+				E2C3D6F4282A8D5D00E0B8FE /* SetBedTimeViewModel.swift */,
 				E289F10D2894700100E32148 /* SettingsModel.swift */,
 				E289F1262896F51E00E32148 /* NewEntryViewModel.swift */,
 				E289F1482899D3FB00E32148 /* Global.swift */,
@@ -448,7 +448,7 @@
 				E289F12A2896F96200E32148 /* Dream.swift in Sources */,
 				28DFF7CD281C84810012C12C /* ContentView.swift in Sources */,
 				284408EA28988BB900207B5C /* NewDream.swift in Sources */,
-				E2C3D6F5282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */,
+				E2C3D6F5282A8D5D00E0B8FE /* SetBedTimeViewModel.swift in Sources */,
 				E289F1332899AA8C00E32148 /* UserAuth.swift in Sources */,
 				E2C3D6FE282A954A00E0B8FE /* View+TSS.swift in Sources */,
 				E289F11A2896B44E00E32148 /* MoodChart.swift in Sources */,
@@ -490,7 +490,7 @@
 				E228427A28A1AC4E00B4809A /* SignupPage.swift in Sources */,
 				E289F1342899AA8C00E32148 /* UserAuth.swift in Sources */,
 				28DFF7CE281C84810012C12C /* ContentView.swift in Sources */,
-				E2C3D6F6282A8D5D00E0B8FE /* OnboardingViewModel.swift in Sources */,
+				E2C3D6F6282A8D5D00E0B8FE /* SetBedTimeViewModel.swift in Sources */,
 				E2C3D6FF282A954A00E0B8FE /* View+TSS.swift in Sources */,
 				E2C3D704282AA1AA00E0B8FE /* WelcomePage.swift in Sources */,
 				E228427728A1AC4400B4809A /* LoginPage.swift in Sources */,
